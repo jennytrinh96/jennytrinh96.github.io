@@ -1,0 +1,43 @@
+h1{
+    font-size: 80px; 
+ }
+
+ /* Comment in CSS */
+ /* class = .blah , id = #blah */
+
+ .blue{
+    color:blue;
+ }
+
+ .red{
+    color:red;
+ }
+
+ #purple{
+    color:purple;
+ }
+
+ .alignLeft{
+    text-align: left;
+ }
+
+ .alignRight{
+    text-align: right;
+ }
+
+ .alignCenter{
+    text-align: center;
+ }
+
+ .white{
+    color:white;
+ }
+
+ .blackBackground{
+    background-color: black;
+ }
+
+ body{
+    background-color: bisque;
+ }
+
