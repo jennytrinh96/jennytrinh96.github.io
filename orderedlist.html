@@ -3,9 +3,97 @@
     <title>
     Ordered List Demo
     </title>
+
+    <link rel="stylesheet"         
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"         
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"         
+    crossorigin="anonymous">
+
+    <link rel="stylesheet" href= "navStyle.css">
+
   </head>
   
   <body>
+
+    <ul class= "nav nav-pills nav-fill primaryNav">
+
+        <li class="nav-item">
+            <a href="index.html">Home</a>
+        </li>
+  
+  
+        <li class="nav-item">
+            <a href="headings.html">Heading Demo</a> 
+        </li>
+  
+  
+        <li class="nav-item">
+            <a href="textdemo.html">Text Demo</a> 
+        </li>
+  
+  
+        <li class="nav-item">
+            <a href="unorderedlist.html">Unordered List Demo</a> 
+        </li>
+  
+  
+        <li class="nav-item">
+            <a class= "nav-link active" aria-current= "page" href="orderedlist.html">Ordered List Demo</a> <!-- class is the current active page-->
+        </li>
+  
+  
+        <li class="nav-item">
+            <a href="tabledemo1.html">Table Demo 1</a>
+        </li>
+  
+  
+        <li class="nav-item">
+            <a href="tabledemo2.html">Table Demo 2 - Pets</a>
+        </li>
+  
+  
+        <li class="nav-item">
+            <a href="cssdemo.html">CSS Demo</a> 
+        </li>
+  
+  
+        <li class="nav-item">
+            <a  href="travel.html">Dream Vacation Page!</a> 
+        </li>
+  
+  
+        <li class="nav-item">
+            <a href="bootstrapdemo.html">Bootstrap Demo</a> 
+        </li>
+
+        
+        <li class="nav-item">
+            <a href="mediaQueryDemo.html">Media Query Demo</a>
+        </li>
+        
+      </ul>
+
+      
+        <!--2nd Nav (small screen) - Drop down nav list-->
+        <div class="dropdown show secondaryNav">
+            <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Navigation List
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="index.html">Home</a>
+              <a class="dropdown-item" href="headings.html">Heading Demo</a>
+              <a class="dropdown-item" href="textdemo.html">Text Demo</a>
+              <a class="dropdown-item" href="unorderedlist.html">Unordered List Demo</a>
+              <a class="dropdown-item active" href="orderedlist.html">Ordered List Demo</a>
+              <a class="dropdown-item" href="tabledemo1.html">Table Demo 1</a>
+              <a class="dropdown-item" href="tabledemo2.html">Table Demo 2 - Pets</a>
+              <a class="dropdown-item" href="cssdemo.html">CSS Demo</a>
+              <a class="dropdown-item" href="travel.html">Dream Vacation Page!</a>
+              <a class="dropdown-item" href="bootstrapdemo.html">Bootstrap Demo</a> 
+              <a class="dropdown-item" href="mediaQueryDemo.html">Media Query Demo</a>
+            </div>
+        </div>
+
     <h1>This is a demo of Numbered List</h1>
     <ol>
         <li>Item</li>
@@ -62,18 +150,16 @@
         <li>Another 'nother Item</li>
     </ol>
 
-    <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="headings.html">Heading Demo</a></li>
-          <li><a href="textdemo.html">Text Demo</a></li>
-          <li><a href="unorderedlist.html">Unordered List Demo</a></li>
-          <li><a href="orderedlist.html">Ordered List Demo</a></li>
-          <li><a href="tabledemo1.html">Table Demo 1</a></li>
-          <li><a href="tabledemo2.html">Table Demo 2 - Pets</a></li>
-          <li><a href="cssdemo.html">CSS Demo</a></li>
-        </ul>
-      </nav>
+
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>   
+  
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>  
+  
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
   </body>
 
 </html>

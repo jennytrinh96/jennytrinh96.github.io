@@ -1,0 +1,209 @@
+<html>
+  <head>
+    <title>
+    Bootstrap Demo
+    </title>
+
+    <!-- to use external bootstrap use the following, will allow access to an extrenal css file-->
+    <link rel="stylesheet"         
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"         
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"         
+    crossorigin="anonymous">
+
+    <link rel="stylesheet" href= "navStyle.css">
+
+  </head>
+  
+  <body>
+    
+      <ul class= "nav nav-pills nav-fill primaryNav">
+
+        <li class="nav-item">
+            <a href="index.html">Home</a>
+        </li>
+
+
+        <li class="nav-item">
+            <a href="headings.html">Heading Demo</a>
+        </li>
+
+
+        <li class="nav-item">
+            <a href="textdemo.html">Text Demo</a>
+        </li>
+
+
+        <li class="nav-item">
+            <a href="unorderedlist.html">Unordered List Demo</a>
+        </li>
+
+
+        <li class="nav-item">
+            <a href="orderedlist.html">Ordered List Demo</a>
+        </li>
+
+
+        <li class="nav-item">
+            <a href="tabledemo1.html">Table Demo 1</a>
+        </li>
+
+
+        <li class="nav-item">
+            <a href="tabledemo2.html">Table Demo 2 - Pets</a>
+        </li>
+
+
+        <li class="nav-item">
+            <a href="cssdemo.html">CSS Demo</a>
+        </li>
+
+
+        <li class="nav-item">
+            <a href="travel.html">Dream Vacation Page!</a>
+        </li>
+
+        <li class="nav-item">
+            <a class= "nav-link active" aria-current= "page" href="bootstrapdemo.html">Bootstrap Demo</a> <!-- class is the current active page-->
+        </li>
+
+      <li class="nav-item">
+        <a href="mediaQueryDemo.html">Media Query Demo</a>
+      </li>
+        
+      </ul>
+
+    <!--2nd Nav (small screen) - Drop down nav list-->
+    <div class="dropdown show secondaryNav">
+        <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Navigation List
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="index.html">Home</a>
+          <a class="dropdown-item" href="headings.html">Heading Demo</a>
+          <a class="dropdown-item" href="textdemo.html">Text Demo</a>
+          <a class="dropdown-item" href="unorderedlist.html">Unordered List Demo</a>
+          <a class="dropdown-item" href="orderedlist.html">Ordered List Demo</a>
+          <a class="dropdown-item" href="tabledemo1.html">Table Demo 1</a>
+          <a class="dropdown-item" href="tabledemo2.html">Table Demo 2 - Pets</a>
+          <a class="dropdown-item" href="cssdemo.html">CSS Demo</a>
+          <a class="dropdown-item" href="travel.html">Dream Vacation Page!</a>
+          <a class="dropdown-item active" href="bootstrapdemo.html">Bootstrap Demo</a> 
+          <a class="dropdown-item" href="mediaQueryDemo.html">Media Query Demo</a>
+        </div>
+    </div>
+      
+    
+
+    <!-- Bootstap elements all for your code to be formatted into a grid (rows and columns)-->
+    <!-- first, make a container. Use a div and then use the class= 'container'-->
+
+    <div class= "container">
+
+        <!-- For each row, make a div that is class= "row"-->
+
+        <div class="row"> <!--start of first row-->
+            <!-- For each row, specify columns (For each row, can use max 12 columns)-->
+            <div class= "col-md-4">
+                <!-- this is a medium column of size 4 (takes up 1/3 of the row)-->
+                <p>This information is in the first 1/3 of the first row in my bootstrap grid!</p>
+            </div>
+
+
+        <div class= "col-md-4">
+            <!-- this is a medium column of size 4 (takes up 1/3 of the row)-->
+            <p>This information is in the first 2/3 of the first row in my bootstrap grid!</p>
+        </div>
+
+
+        <div class= "col-md-4">
+            <!-- this is a medium column of size 4 (takes up 1/3 of the row)-->
+            <p>This information is in the first 3/3 of the first row in my bootstrap grid!</p>
+        </div>
+
+        </div> <!-- end of first row--> 
+
+
+
+        <div class="row"> <!--start of second row-->
+
+            <div class= "col-md-6">
+                <!-- column of size 6 (1/2 of the row)-->
+                <h2>This info is in the first 1/2 of the second row</h2>
+            </div>
+
+
+            <div class= "col-md-6">
+                <!-- column of size 6 (1/2 of the row)-->
+                <h2>This info is in the first 2/2 of the second row</h2>
+            </div>
+
+        </div> <!-- end of second row--> 
+
+
+
+        <div class="row"> <!--start of third row-->
+
+            <div class= "col-md-8">
+                <!-- column of size 8 (2/3 of the row)-->
+                <h3>This info takes up 2/3 of the third row</h3>
+            </div>
+
+
+            <div class= "col-md-3">
+                <!-- column of size 3 (1/4 of the row)-->
+                <h3>This info takes up 1/4 of the third row</h3>
+            </div>
+
+
+            <div class= "col-md-1">
+                <!-- column of size 1 (1/12 of the row)-->
+                <h3>This info takes up 1/12 of the third row</h3>
+            </div>
+
+        </div> <!-- end of third row--> 
+
+
+
+        <div class="row"> <!--start of fourth row-->
+
+            <div class= "col-md-12">
+                <!-- column of size 12 (12/12 of the row)-->
+                
+                <h3>This info takes up 12/12 of the third row. TOO BIG!!</h3>
+                <h3>I SHALL TAKE UP ALL 12 COLUMNS :)</h3>
+                
+            </div>
+        </div> <!-- end of fourth row-->
+
+
+        
+        <div class="row"> <!--start of fifth row-->
+
+            <div class= "col-md-12">
+                    <div class= "alert alert-primary" role= "alert">
+                        THIS IS AN EXAMPLE OF AN ALERT!
+                    </div>
+                
+
+                
+            </div>
+        </div> <!-- end of fifth row-->
+
+
+    </div> <!-- end of the bootstrap container-->
+    
+
+
+
+
+    <!-- allows inner activity? (do more research)-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>   
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>  
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  </body>
+
+</html>

@@ -1,0 +1,8 @@
+body{
+    background-color: lightslategray;
+    background-size: 100% 100%; /* top, bottom, left, right size */
+}
+
+.white{
+    color: aliceblue;
+ }

@@ -1,7 +1,7 @@
 <html>
   <head>
     <title>
-    My Home Page
+    Media Query Demo
     </title>
 
     <link rel="stylesheet"         
@@ -9,15 +9,18 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"         
     crossorigin="anonymous">
 
+    <link rel="stylesheet" href= "boxstyle.css">
     <link rel="stylesheet" href= "navStyle.css">
+
 
   </head>
   
   <body>
+    <!-- Primary nav (big screen)-->
     <ul class= "nav nav-pills nav-fill primaryNav">
 
       <li class="nav-item">
-          <a class= "nav-link active" aria-current= "page" href="index.html">Home</a> <!-- class is the current active page-->
+          <a href="index.html">Home</a> 
       </li>
 
 
@@ -66,34 +69,45 @@
       </li>
 
       <li class="nav-item">
-        <a href="mediaQueryDemo.html">Media Query Demo</a>
-      </li>
-      
+        <a class= "nav-link active" aria-current= "page" href="mediaQueryDemo.html">Media Query Demo</a> <!-- class is the current active page-->
+    </li>
+             
     </ul>
 
-        <!--2nd Nav (small screen) - Drop down nav list-->
-        <div class="dropdown show secondaryNav">
-            <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Navigation List
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item active" href="index.html">Home</a>
-              <a class="dropdown-item" href="headings.html">Heading Demo</a>
-              <a class="dropdown-item" href="textdemo.html">Text Demo</a>
-              <a class="dropdown-item" href="unorderedlist.html">Unordered List Demo</a>
-              <a class="dropdown-item" href="orderedlist.html">Ordered List Demo</a>
-              <a class="dropdown-item" href="tabledemo1.html">Table Demo 1</a>
-              <a class="dropdown-item" href="tabledemo2.html">Table Demo 2 - Pets</a>
-              <a class="dropdown-item" href="cssdemo.html">CSS Demo</a>
-              <a class="dropdown-item" href="travel.html">Dream Vacation Page!</a>
-              <a class="dropdown-item" href="bootstrapdemo.html">Bootstrap Demo</a> 
-              <a class="dropdown-item" href="mediaQueryDemo.html">Media Query Demo</a>
-            </div>
+    <!--2nd Nav (small screen) - Drop down nav list-->
+    <div class="dropdown show secondaryNav">
+        <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Navigation List
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="index.html">Home</a>
+          <a class="dropdown-item" href="headings.html">Heading Demo</a>
+          <a class="dropdown-item" href="textdemo.html">Text Demo</a>
+          <a class="dropdown-item" href="unorderedlist.html">Unordered List Demo</a>
+          <a class="dropdown-item" href="orderedlist.html">Ordered List Demo</a>
+          <a class="dropdown-item" href="tabledemo1.html">Table Demo 1</a>
+          <a class="dropdown-item" href="tabledemo2.html">Table Demo 2 - Pets</a>
+          <a class="dropdown-item" href="cssdemo.html">CSS Demo</a>
+          <a class="dropdown-item" href="travel.html">Dream Vacation Page!</a>
+          <a class="dropdown-item" href="bootstrapdemo.html">Bootstrap Demo</a> 
+          <a class="dropdown-item active" href="mediaQueryDemo.html">Media Query Demo</a>
         </div>
+    </div>
 
 
+    <center>
+        <h2>Media Query Demo</h2>
+        <h3>Change the width of the page to see changed in the page</h3>
+    </center>
 
-    <p>Welcome to my website!</p>
+    <div class= "box greenbox"></div>
+    <div class= "box redbox"></div>
+    <div class= "box yellowbox"></div>
+    <div class= "box bluebox"></div>
+    <div class= "box purplebox"></div>
+    
+
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
